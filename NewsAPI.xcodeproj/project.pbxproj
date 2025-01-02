@@ -11,6 +11,10 @@
 		6022101B2D08CD1D00580677 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6022101A2D08CD1D00580677 /* ContentView.swift */; };
 		6022101D2D08CD1E00580677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6022101C2D08CD1E00580677 /* Assets.xcassets */; };
 		602210202D08CD1E00580677 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6022101F2D08CD1E00580677 /* Preview Assets.xcassets */; };
+		60E79A242D0CA9A6005E46F0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79A232D0CA9A6005E46F0 /* WebView.swift */; };
+		60E79A262D0CA9C8005E46F0 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79A252D0CA9C8005E46F0 /* WebViewContainer.swift */; };
+		60E79A282D0CA9E2005E46F0 /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79A272D0CA9E2005E46F0 /* ArticleListView.swift */; };
+		60E79A2A2D0CA9F4005E46F0 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E79A292D0CA9F4005E46F0 /* FetchData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		6022101A2D08CD1D00580677 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6022101C2D08CD1E00580677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6022101F2D08CD1E00580677 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		60E79A232D0CA9A6005E46F0 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		60E79A252D0CA9C8005E46F0 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		60E79A272D0CA9E2005E46F0 /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
+		60E79A292D0CA9F4005E46F0 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		602210172D08CD1D00580677 /* NewsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				60E79A222D0CA976005E46F0 /* Model */,
+				60E79A212D0CA969005E46F0 /* Views */,
 				602210182D08CD1D00580677 /* NewsAPIApp.swift */,
-				6022101A2D08CD1D00580677 /* ContentView.swift */,
 				6022101C2D08CD1E00580677 /* Assets.xcassets */,
 				6022101E2D08CD1E00580677 /* Preview Content */,
 			);
@@ -65,6 +74,25 @@
 				6022101F2D08CD1E00580677 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		60E79A212D0CA969005E46F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60E79A232D0CA9A6005E46F0 /* WebView.swift */,
+				6022101A2D08CD1D00580677 /* ContentView.swift */,
+				60E79A252D0CA9C8005E46F0 /* WebViewContainer.swift */,
+				60E79A272D0CA9E2005E46F0 /* ArticleListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60E79A222D0CA976005E46F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60E79A292D0CA9F4005E46F0 /* FetchData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E79A242D0CA9A6005E46F0 /* WebView.swift in Sources */,
+				60E79A282D0CA9E2005E46F0 /* ArticleListView.swift in Sources */,
+				60E79A262D0CA9C8005E46F0 /* WebViewContainer.swift in Sources */,
 				6022101B2D08CD1D00580677 /* ContentView.swift in Sources */,
+				60E79A2A2D0CA9F4005E46F0 /* FetchData.swift in Sources */,
 				602210192D08CD1D00580677 /* NewsAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
